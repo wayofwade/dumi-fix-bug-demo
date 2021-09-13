@@ -8,4 +8,20 @@ export default defineConfig({
   outputPath: 'docs-dist',
   mode: 'site',
   // more config: https://d.umijs.org/config
+  menus: {
+    '/docs': [
+      {
+        title: '通用',
+        children: ['../docs/docs/common/start.md'],
+      },
+      {
+        title: '开发',
+        children: ['../docs/docs/dev/start.md'],
+      },
+      /* {
+				title: '结果页',
+				children: ['/result/index.md'],
+			}, */
+    ],
+  },
 });
